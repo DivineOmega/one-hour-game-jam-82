@@ -74,6 +74,9 @@ var timer = startTime;
 var score = 0;
 
 $(document).ready(function() {
+
+    $(document).snowfall({flakeCount : 400, maxSpeed : 5, maxSize : 5});;
+
     newWord();
 
     if (!localStorage.highscore) {
